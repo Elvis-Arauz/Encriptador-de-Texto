@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--
+    Este apartado hace que el sitio web sea responsive, además tiene 
+    el favicon del sitio y la hoja de estilos CSS que se utilizará para la página.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
@@ -8,12 +12,22 @@
     <title>Encriptador de texto</title>
 </head>
 <body>
+    <!-- 
+    Encabezado de la página, que incluye un logo que es un enlace
+    -->
     <header>
     <a href="#" rel="">
         <img src="./imagenes/logo.svg" alt="Logo Alura" class="logo">
-    </a>"
+    </a>
     </header>
 
+    <!-- 
+    En esta parte contiene dos secciones:
+    1. La sección de encriptación, que incluye un área de texto para que el usuario ingrese texto,
+       un aviso sobre las reglas de encriptación, y botones para encriptar y desencriptar el texto.
+    2. La sección de tarjeta, que muestra un mensaje predeterminado cuando no hay texto, una imagen
+       decorativa y un botón para copiar el texto encriptado o desencriptado.
+    -->
     <main>
     <section class="encriptador">
         <textarea class="encriptar" placeholder="Ingresa el texto aquí " ></textarea>
@@ -37,17 +51,25 @@
         <textarea type="mensaje" class="evaluar" readonly></textarea>
         <button type="submit"class="btn-copiar">Copiar</button>
     </section>
- </main>
+    </main>
 
- <footer>
-    <p class="copyright">&copy; copyright 2024 - Encriptador de texto - desarrollador por Elvis Araúz</p>
-    <a href="#" rel="">
-        <img src="./imagenes/linkedin.svg" alt="Logo Linkedin" class="linked">
-    </a>
-    <a href="#" rel="">
-        <img src="./imagenes/github.svg" alt="Logo Github" class="git">
-    </a>
-</footer>
-<script src="./js/encriptador.js"></script>
+    <!--
+    En este apartado se define el pie de página de la página, incluyendo un aviso de copyright
+    y enlaces a perfiles de redes sociales (LinkedIn y GitHub) con sus respectivos íconos.
+    -->
+    <footer>
+        <p class="copyright">&copy; copyright 2024 - Encriptador de texto - desarrollado por Elvis Araúz</p>
+        <a href="#" rel="">
+            <img src="./imagenes/linkedin.svg" alt="Logo Linkedin" class="linked">
+        </a>
+        <a href="#" rel="">
+            <img src="./imagenes/github.svg" alt="Logo Github" class="git">
+        </a>
+    </footer>
+
+    <!-- 
+   Esta line hace referencia a conexión con Js.
+    -->
+    <script src="./js/encriptador.js"></script>
 </body>
 </html>
